@@ -26,7 +26,7 @@ def b(duration=500):
 song = [e, d, c, d, e, e, e, d, d, d, e, g, g, e, d, c, d, e, e, e, d, d, e, d, c ]
 
 for note in song:
-  note(200)
+  note(1000)
 #Made key
 # winsound.Beep(c(fre), 500)
 #winsound.Beep(e(fre), 500)
