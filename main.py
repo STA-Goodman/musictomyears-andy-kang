@@ -1,55 +1,36 @@
 import winsound
 
-fre=0
+def c(duration=500):
+    winsound.Beep(523, duration)
+
+def d(duration=500):
+    winsound.Beep(587, duration)
+
+def e(duration=500):    
+    winsound.Beep(659, duration)
+
+def f(duration=500):
+    winsound.Beep(698, duration)
+
+def g(duration=500):
+    winsound.Beep(784, duration)
+
+def a(duration=500):
+    winsound.Beep(880, duration)
+
+def b(duration=500):
+    winsound.Beep(987, duration)
 
 
-def c (fre):
-    fre=523
-    return fre
-def d (fre):
-    fre=587
-    return fre
-def e (fre):
-    fre=659
-    return fre
-def f (fre):
-    fre=698
-    return fre
-def g (fre):
-    fre=784
-    return fre
-def a (fre):
-    fre=880
-    return fre
-def b (fre):
-    fre=987
-    return fre
 
+song = [e, d, c, d, e, e, e, d, d, d, e, g, g, e, d, c, d, e, e, e, d, d, e, d, c ]
 
-    
+for note in song:
+  note(200)
+#Made key
+# winsound.Beep(c(fre), 500)
+#winsound.Beep(e(fre), 500)
+#winsound.Beep(f(fre), 500)
 
-winsound.Beep(g(fre), 500)
-winsound.Beep(e(fre), 500)
-winsound.Beep(f(fre), 500)
-winsound.Beep(g(fre), 500)
-winsound.Beep(e(fre), 500)
-winsound.Beep(f(fre), 500)
-winsound.Beep(g(fre), 500)
-winsound.Beep(g(fre)/2, 500)
-winsound.Beep(a(fre)/2, 500)
-winsound.Beep(b(fre)/2, 500)
-winsound.Beep(c(fre), 500)
-winsound.Beep(d(fre), 500)
-winsound.Beep(e(fre), 500)
-winsound.Beep(f(fre), 500)
-winsound.Beep(e(fre), 500)
-winsound.Beep(c(fre), 500)
-winsound.Beep(d(fre), 500)
-winsound.Beep(e(fre), 500)
-winsound.Beep(e(fre)/2, 500)
-winsound.Beep(f(fre)/2, 500)
-winsound.Beep(g(fre)/2, 500)
-winsound.Beep(a(fre)/2, 500)
-winsound.Beep(g(fre)/2, 500)
-winsound.Beep(f(fre)/2, 500)
-winsound.Beep(g(fre)/2, 500)
+#Play music with file
+#winsound.PlaySound('copycat.wav',winsound.SND_FILENAME)
